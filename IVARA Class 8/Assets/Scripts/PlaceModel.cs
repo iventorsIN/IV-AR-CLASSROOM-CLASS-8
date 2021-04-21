@@ -34,14 +34,7 @@ public class PlaceModel : MonoBehaviour
                obj =Instantiate(place_object);
                obj.transform.position = raycast_hits[0].pose.position;
             }
-           
-        }
-
-
-         // On pressing Escape key Exit the application
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-         Application.Quit();
+            
         }
 
 

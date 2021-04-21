@@ -82,11 +82,10 @@ namespace Lean.Touch
 				// Did we select a new LeanSelectable?
 				if (selectable.IsSelected == false)
 				{
-					// Skip if too many are selected?
-					if (MaxSelectables > 0 && LeanSelectable.IsSelectedCount >= MaxSelectables)
+					// Deselect some if we have too many
+					if (MaxSelectables > 0)
 					{
-						return;
-					//	LeanSelectable.Cull(MaxSelectables - 1);
+						LeanSelectable.Cull(MaxSelectables - 1);
 					}
 
 					// Select

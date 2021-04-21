@@ -1,6 +1,4 @@
 using UnityEngine;
-using Lean.Common;
-using FSA = UnityEngine.Serialization.FormerlySerializedAsAttribute;
 
 namespace Lean.Touch
 {
@@ -32,7 +30,7 @@ namespace Lean.Touch
 		/// 1 = Slowly change.
 		/// 10 = Quickly change.</summary>
 		[Tooltip("If you want this component to change smoothly over time, then this allows you to control how quick the changes reach their target value.\n\n-1 = Instantly change.\n\n1 = Slowly change.\n\n10 = Quickly change.")]
-		[FSA("Dampening")] public float Damping = -1.0f;
+		public float Dampening = -1.0f;
 
 		[HideInInspector]
 		[SerializeField]
@@ -104,7 +102,7 @@ namespace Lean.Touch
 			}
 
 			// Get t value
-			var factor = LeanHelper.GetDampenFactor(Damping, Time.deltaTime);
+			var factor = LeanTouch.GetDampenFactor(Dampening, Time.deltaTime);
 
 			// Dampen remainingDelta
 			var newRemainingScale = Vector3.Lerp(remainingScale, Vector3.zero, factor);
@@ -149,7 +147,7 @@ namespace Lean.Touch
 		protected virtual void Translate(float pinchScale, Vector2 screenCenter)
 		{
 			// Make sure the camera exists
-			var camera = LeanHelper.GetCamera(Camera, gameObject);
+			var camera = LeanTouch.GetCamera(Camera, gameObject);
 
 			if (camera != null)
 			{

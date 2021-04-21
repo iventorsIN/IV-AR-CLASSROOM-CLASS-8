@@ -1,6 +1,4 @@
 using UnityEngine;
-using Lean.Common;
-using FSA = UnityEngine.Serialization.FormerlySerializedAsAttribute;
 
 namespace Lean.Touch
 {
@@ -27,7 +25,7 @@ namespace Lean.Touch
 		/// 1 = Slowly change.
 		/// 10 = Quickly change.</summary>
 		[Tooltip("If you want this component to change smoothly over time, then this allows you to control how quick the changes reach their target value.\n\n-1 = Instantly change.\n\n1 = Slowly change.\n\n10 = Quickly change.")]
-		[FSA("Dampening")] public float Damping = -1.0f;
+		public float Dampening = -1.0f;
 
 		/// <summary>This allows you to control how much momenum is retained when the dragging fingers are all released.
 		/// NOTE: This requires <b>Dampening</b> to be above 0.</summary>
@@ -97,7 +95,7 @@ namespace Lean.Touch
 			remainingTranslation += transform.localPosition - oldPosition;
 
 			// Get t value
-			var factor = LeanHelper.GetDampenFactor(Damping, Time.deltaTime);
+			var factor = LeanTouch.GetDampenFactor(Dampening, Time.deltaTime);
 
 			// Dampen remainingDelta
 			var newRemainingTranslation = Vector3.Lerp(remainingTranslation, Vector3.zero, factor);
@@ -105,7 +103,7 @@ namespace Lean.Touch
 			// Shift this transform by the change in delta
 			transform.localPosition = oldPosition + remainingTranslation - newRemainingTranslation;
 
-			if (fingers.Count == 0 && Inertia > 0.0f && Damping > 0.0f)
+			if (fingers.Count == 0 && Inertia > 0.0f && Dampening > 0.0f)
 			{
 				newRemainingTranslation = Vector3.Lerp(newRemainingTranslation, remainingTranslation, Inertia);
 			}
@@ -146,7 +144,7 @@ namespace Lean.Touch
 		private void Translate(Vector2 screenDelta)
 		{
 			// Make sure the camera exists
-			var camera = LeanHelper.GetCamera(Camera, gameObject);
+			var camera = LeanTouch.GetCamera(Camera, gameObject);
 
 			if (camera != null)
 			{

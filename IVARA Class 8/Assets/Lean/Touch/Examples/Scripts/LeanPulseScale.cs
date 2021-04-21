@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using Lean.Common;
-using FSA = UnityEngine.Serialization.FormerlySerializedAsAttribute;
 
 namespace Lean.Touch
 {
@@ -30,7 +28,7 @@ namespace Lean.Touch
 		/// 1 = Slowly change.
 		/// 10 = Quickly change.</summary>
 		[Tooltip("If you want this component to change smoothly over time, then this allows you to control how quick the changes reach their target value.\n\n-1 = Instantly change.\n\n1 = Slowly change.\n\n10 = Quickly change.")]
-		[FSA("Dampening")] public float Damping = 5.0f;
+		public float Dampening = 5.0f;
 
 		[System.NonSerialized]
 		private float counter;
@@ -46,7 +44,7 @@ namespace Lean.Touch
 				Size += PulseSize;
 			}
 
-			var factor = LeanHelper.GetDampenFactor(Damping, Time.deltaTime);
+			var factor = LeanTouch.GetDampenFactor(Dampening, Time.deltaTime);
 
 			Size = Mathf.Lerp(Size, 1.0f, factor);
 

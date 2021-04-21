@@ -205,7 +205,7 @@ namespace Lean.Touch
 }
 
 #if UNITY_EDITOR
-namespace Lean.Touch.Inspector
+namespace Lean.Touch
 {
 	using UnityEditor;
 
