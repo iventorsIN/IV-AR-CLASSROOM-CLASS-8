@@ -38,12 +38,5 @@ public class PlaceModel : MonoBehaviour
         }
 
 
-         // On pressing Escape key Exit the application
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-         Application.Quit();
-        }
-
-
     }
 }

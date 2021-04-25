@@ -147,10 +147,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 278881720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daa8c79d1f9776d48899147250efb49d, type: 3}
+  m_Script: {fileID: 11500000, guid: 68c8486a692d11a4296a04c9feb8e437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  place_object: {fileID: 4600259768122482240, guid: 40167140a28b80d4ebefd3649e633716,
+  place_object: {fileID: 5572150197394276243, guid: cdd4447eb10bcb1479b0a1f1702cca2d,
     type: 3}
   ar_session_origin: {fileID: 1947191392}
 --- !u!4 &278881722
