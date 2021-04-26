@@ -3,7 +3,22 @@ guid: 2d729abb8dbb31a4f900999f6a3d658c
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land,building,clouds and rain drops
+    second: {fileID: 2100000, guid: 566cf7d35dc5a1e4c859170507a97c17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mountain, rock and river
+    second: {fileID: 2100000, guid: d1e481b2b8951c443958e8de5fd2eeab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trees
+    second: {fileID: 2100000, guid: d07ec2f6451e19140b26ba30f84d3828, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

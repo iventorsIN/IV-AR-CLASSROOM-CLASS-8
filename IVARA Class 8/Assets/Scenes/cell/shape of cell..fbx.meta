@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 564d96d267b4f6441a614e7605311527
+guid: 5960b9b290c1a444e90e64c6516764cf
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: combustion
-    second: {fileID: 2100000, guid: 284b82d17d1991b4e8d83dc549c5fd2e, type: 2}
+      name: shape of cell
+    second: {fileID: 2100000, guid: 0b5676ecc1984fb438077e67a775a304, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

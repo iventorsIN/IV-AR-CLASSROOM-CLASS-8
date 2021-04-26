@@ -3,7 +3,42 @@ guid: 1b0282006c3338149a5743e9f996559a
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: b083747dd25530b489fa51c17dee155c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: label1
+    second: {fileID: 2100000, guid: 1030473393bf6584bbf4ccc4df38a64d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: label2
+    second: {fileID: 2100000, guid: e88236e1672168b4f96671c83a420c8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: label3
+    second: {fileID: 2100000, guid: 334893dac73288d479c580f04f8ac9eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: label4
+    second: {fileID: 2100000, guid: 0857ef144e015f24c8080c5601bb980a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic cap
+    second: {fileID: 2100000, guid: 864c33285505730418e3614aa9a0a74d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: steal cap
+    second: {fileID: 2100000, guid: 75aecaeaf991e6f43b31ae46f2f054b6, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
