@@ -3,7 +3,32 @@ guid: 7ee7254beaac2894db3cebf096bb2d32
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: e0963d44926bdd84284c4bcb4c9d6a86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey
+    second: {fileID: 2100000, guid: d5751866db383a041b21de01b63f87f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: organe
+    second: {fileID: 2100000, guid: c3c102fead00b1c4d990c6a85ab9dcac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sandal
+    second: {fileID: 2100000, guid: 04f2997b54d3a794abcaa394a4deba46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: 0ce438b0c2f49a64f912f49614e2053a, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
